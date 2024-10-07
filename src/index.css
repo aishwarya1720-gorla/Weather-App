@@ -1,13 +1,214 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+#container{
+    height:100vh;
+    width:100%;
+    background-image: url("https://img.freepik.com/free-psd/weather-background-with-clouds_23-2150374545.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+section{
+    border:solid red;
+    padding: 3vh;
+    
+} */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Reset some default browser styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General container styling */
+  /* #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Input and button container */
+  #block {
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #74ebd5;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6bc9c4;
+  }
+  
+  section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Weather info styling */
+  /* h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }  */
+  
+ 
+  /* p.loading {
+    font-size: 20px;
+    color: #f39c12;
+  }
+  
+  p.error {
+    font-size: 20px;
+    color: #e74c3c;
+  }
+   */ 
+   /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General container styling */
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://www.shutterstock.com/image-illustration/3d-rendered-cute-sun-white-260nw-2186718189.jpg') no-repeat center center/cover; 
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text for better contrast on the background image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Slight text shadow for readability */
+  }
+  
+  /* Input and button container */
+  #block {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque on focus */
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #74ebd5;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #6bc9c4;
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Weather info styling */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  /* Loading and error message styling */
+  p.loading {
+    font-size: 20px;
+    color: #f39c12;
+  }
+  
+  p.error {
+    font-size: 20px;
+    color: #e74c3c;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    input[type="text"] {
+      width: 250px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
